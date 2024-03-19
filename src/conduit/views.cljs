@@ -109,7 +109,7 @@
         [:ul.nav.navbar-nav.pull-xs-right
          [:li.nav-item
           [:a.nav-link {:href (url-for :home) :class (when (= active-page :home) "active")} "Home"]]
-         #_[:li.nav-item
+         [:li.nav-item
           [:a.nav-link {:href (url-for :login) :class (when (= active-page :login) "active")} "Sign in"]]
          #_[:li.nav-item
           [:a.nav-link {:href (url-for :register) :class (when (= active-page :register) "active")} "Sign up"]]]
@@ -512,5 +512,5 @@
   (let [active-page @(subscribe [:active-page])]
     [:div
      [header]
-#_     [pages active-page]
+     [pages active-page]
      [footer]]))
