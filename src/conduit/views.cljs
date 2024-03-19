@@ -512,5 +512,5 @@
   (let [active-page @(subscribe [:active-page])]
     [:div
      [header]
-     [pages active-page]
+#_     [pages active-page]
      [footer]]))

@@ -6,7 +6,8 @@
                 [cljs-ajax "0.7.3"]
                 [bidi "2.1.5"]
                 [kibu/pushy "0.3.8"]
-                [binaryage/devtools "0.9.10"]]
+                [binaryage/devtools "0.9.10"]
+                [hiccups "0.3.0"]]
 
  :fs-watch {:hawk false}
  
