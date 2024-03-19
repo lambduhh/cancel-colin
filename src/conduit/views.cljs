@@ -104,14 +104,14 @@
         active-page @(subscribe [:active-page])]
     [:nav.navbar.navbar-light
      [:div.container
-      [:a.navbar-brand {:href (url-for :home)} "conduit"]
+      [:a.navbar-brand {:href (url-for :home)} "cancelcolincriner.com"]
       (if (empty? user)
         [:ul.nav.navbar-nav.pull-xs-right
          [:li.nav-item
           [:a.nav-link {:href (url-for :home) :class (when (= active-page :home) "active")} "Home"]]
-         [:li.nav-item
+         #_[:li.nav-item
           [:a.nav-link {:href (url-for :login) :class (when (= active-page :login) "active")} "Sign in"]]
-         [:li.nav-item
+         #_[:li.nav-item
           [:a.nav-link {:href (url-for :register) :class (when (= active-page :register) "active")} "Sign up"]]]
         [:ul.nav.navbar-nav.pull-xs-right
          [:li.nav-item
@@ -158,7 +158,7 @@
      (when (empty? user)
        [:div.banner
         [:div.container
-         [:h1.logo-font "conduit"]
+         [:h1.logo-font "Cancel Colin Criner"]
          [:p "A place to share your knowledge."]]])
      [:div.container.page
       [:div.row
